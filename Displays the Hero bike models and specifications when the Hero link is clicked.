@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajaj Models</title>
+</head>
+<body>
+    <h2>Bajaj Bike Models</h2>
+    <ul>
+        <li><strong>Bajaj Pulsar 150</strong> - 149cc, 14 BHP, 4-Stroke, Air Cooled</li>
+        <li><strong>Bajaj Avenger Street 160</strong> - 160cc, 14.8 BHP, 4-Stroke, Oil Cooled</li>
+        <li><strong>Bajaj Dominar 400</strong> - 373cc, 39.4 BHP, 4-Stroke, Liquid Cooled</li>
+    </ul>
+</body>
+</html>

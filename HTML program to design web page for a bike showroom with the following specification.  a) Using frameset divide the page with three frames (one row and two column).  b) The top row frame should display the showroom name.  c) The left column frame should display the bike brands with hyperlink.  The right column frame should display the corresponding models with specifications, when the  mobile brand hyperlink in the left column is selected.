@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda Models</title>
+</head>
+<body>
+    <h2>Honda Bike Models</h2>
+    <ul>
+        <li><strong>Honda CB Unicorn 160</strong> - 162cc, 12.9 BHP, 4-Stroke, Air Cooled</li>
+        <li><strong>Honda CBR 250R</strong> - 249cc, 26 BHP, 4-Stroke, Liquid Cooled</li>
+        <li><strong>Honda CRF 110F</strong> - 110cc, 7.4 BHP, 4-Stroke, Air Cooled</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price API</title>
+    <script>
+        function fetchStockData() {
+            var symbol = document.getElementById('symbol').value;
+            var xhr = new XMLHttpRequest();
+            var url = `https://api.example.com/stock/${symbol}/historical`; // Replace with a valid API endpoint
+
+            xhr.open('GET', url, true);
+            xhr.onload = function() {
+                if (xhr.status == 200) {
+                    var data = JSON.parse(xhr.responseText);
+                    document.getElementById('result').innerHTML = 
+                        `Stock Price for ${symbol}: ${data.price}`;
+                } else {
+                    document.getElementById('result').innerHTML = 'Stock symbol not found!';
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+
+<h2>Stock Price Information</h2>
+<input type="text" id="symbol" placeholder="Enter stock symbol">
+<button onclick="fetchStockData()">Get Stock Data</button>
+<p id="result"></p>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase and Lowercase</title>
+</head>
+<body>
+    <h2>Enter a string:</h2>
+    <input type="text" id="inputText" placeholder="Enter text">
+    <button onclick="convertText()">Convert</button>
+
+    <p id="output"></p>
+
+    <script>
+        function convertText() {
+            var text = document.getElementById('inputText').value;
+            var uppercase = text.toUpperCase();
+            var lowercase = text.toLowerCase();
+            document.getElementById('output').innerHTML = `Uppercase: ${uppercase}<br>Lowercase: ${lowercase}`;
+        }
+    </script>
+</body>
+</html>

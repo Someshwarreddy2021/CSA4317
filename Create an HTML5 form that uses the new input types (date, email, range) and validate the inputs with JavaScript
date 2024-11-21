@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Validation</title>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var birthdate = document.getElementById("birthdate").value;
+            var range = document.getElementById("range").value;
+            
+            // Name validation
+            if (name === "") {
+                alert("Name is required!");
+                return false;
+            }
+            
+            // Email validation
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert("Invalid email format!");
+                return false;
+            }
+
+            // Date validation
+            if (birthdate === "") {
+                alert("Birthdate is required!");
+                return false;
+            }
+            
+            // Range validation
+            if (range < 1 || range > 10) {
+                alert("Range must be between 1 and 10!");
+                return false;
+            }
+            
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>HTML5 Form with Validation</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="range">Select a range (1-10):</label>
+        <input type="range" id="range" name="range" min="1" max="10"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

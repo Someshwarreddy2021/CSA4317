@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .contact-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 200px;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            font-size: 1rem;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>We’re here to help! Choose an option below:</p>
+        <div class="contact-cards">
+            <div class="card">
+                <h3>Email Us</h3>
+                <p>someshwarredy3032@gmail.com</p>
+                <p>reanthhb1995@gmail.com</p>
+            </div>
+            <div class="card">
+                <h3>Call Us</h3>
+                <p>6303351471 </p>
+                <p>7396498839 </p>
+            </div>
+            <div class="card">
+                <h3>Visit Us</h3>
+                <p>Kg Center Point, Chembrambakkam, Chennai, Tamil Nadu</p>
+            </div>
+        </div>
+        <button onclick="handleAction('Return')">Return Food</button>
+        <button onclick="handleAction('Refund')">Request Refund</button>
+        <button onclick="handleAction('Exchange')">Exchange Food</button>
+        <button onclick="goHome()">Home</button>
+        <button onclick="exitPage()">Exit</button>
+    </div>
+
+    <script>
+        function handleAction(action) {
+            alert(action + " Request Submitted");
+        }
+
+        function goHome() {
+            window.location.href = 'items.html'; // Replace 'index.html' with the home page URL.
+        }
+
+        function exitPage() {
+            if (confirm("Are you sure you want to exit?")) {
+                window.close(); // Closes the tab (Note: This may not work in all browsers due to security restrictions).
+            }
+        }
+function exitPage() {
+    if (confirm("Are you sure you want to log out?")) {
+        window.location.href = 'login1.html'; // Replace 'login.html' with the actual URL of your login page.
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint Loan App - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #3498db;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #bdc3c7;
+            font-size: 16px;
+        }
+
+        .form-group input:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        .form-group .forgot {
+            text-align: right;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .form-group .forgot a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 12px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-login a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #3498db;
+            font-size: 16px;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup-link a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Sprint</h1>
+        <p>Your trusted partner</p>
+    </div>
+
+    <form action="backend.php" method="POST">
+        <div class="form-group">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <span class="forgot"><a href="#">Forgot password?</a></span>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="social-login">
+        <p>Or login with:</p>
+        <a href="#">Google</a>
+        <a href="#">Facebook</a>
+    </div>
+
+    <div class="signup-link">
+        <p>Don't have an account? <a href="items.html">Sign up</a></p>
+    </div>
+</div>
+
+<!-- Add script to handle redirection after login -->
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Here, you can add logic to verify login credentials via an API or a database
+        // For now, we simulate a successful login and redirect
+
+        // Redirect to the next page (e.g., "dashboard.html") after successful login
+        window.location.href = ""; // Change this to the desired page
+< a herf="items.html"> verities</a>
+    });
+</script>
+
+</body>
+</html>
